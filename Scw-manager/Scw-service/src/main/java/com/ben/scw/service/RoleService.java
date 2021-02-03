@@ -13,4 +13,6 @@ public interface RoleService {
     List<TRole> queryAllRole();
 
     List<TRole> queryUserRole(Integer userid);
+
+    List<TRole> queryAllRoleByCondition(String queryText);
 }

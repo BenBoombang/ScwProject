@@ -1,6 +1,7 @@
 package com.ben.scw.service.Impl;
 
 import com.ben.scw.dao.TRoleMapper;
+import com.ben.scw.pojo.Example.TRoleExample;
 import com.ben.scw.pojo.TRole;
 import com.ben.scw.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,15 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public List<TRole> queryUserRole(Integer userid) {
         return tRoleMapper.queryUserRole(userid);
+    }
+
+    @Override
+    public List<TRole> queryAllRoleByCondition(String queryText) {
+        TRoleExample example = new TRoleExample();
+        TRoleExample.Criteria criteria = example.createCriteria();
+
+        criteria.andNameLike("%" + queryText + "%");
+
+        return tRoleMapper.selectByExample(example);
     }
 }

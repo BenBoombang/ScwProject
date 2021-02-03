@@ -69,109 +69,14 @@
                                 <th width="100">操作</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><input type="checkbox"></td>
-                                <td>PM - 项目经理</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><input type="checkbox"></td>
-                                <td>SE - 软件工程师</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><input type="checkbox"></td>
-                                <td>PG - 程序员</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td><input type="checkbox"></td>
-                                <td>TL - 组长</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td><input type="checkbox"></td>
-                                <td>GL - 组长</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td><input type="checkbox"></td>
-                                <td>QA - 品质保证</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td><input type="checkbox"></td>
-                                <td>QC - 品质控制</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td><input type="checkbox"></td>
-                                <td>SA - 软件架构师</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td><input type="checkbox"></td>
-                                <td>CMO / CMS - 配置管理员</td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
-                                    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>
-                                    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
-                                </td>
-                            </tr>
+                            <tbody id="roleData">
+
                             </tbody>
                             <tfoot>
                             <tr >
                                 <td colspan="6" align="center">
                                     <ul class="pagination">
-                                        <li class="disabled"><a href="#">上一页</a></li>
-                                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">下一页</a></li>
+
                                     </ul>
                                 </td>
                             </tr>
@@ -188,6 +93,8 @@
 <script src="${pageContext.request.contextPath}/jquery/jquery-2.1.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/script/docs.min.js"></script>
+<script src="${pageContext.request.contextPath}/plugin/layer/layer.js"></script>
+<script src="${pageContext.request.contextPath}/plugin/jqPg/jqPaginator.js"></script>
 <script type="text/javascript">
     $(function () {
         $(".list-group-item").click(function(){
@@ -200,6 +107,8 @@
                 }
             }
         });
+
+        queryRoles(1);
 
         $("a[href='${pageContext.request.contextPath}/permission/role/toRoleMain']").css("color","red");
 
@@ -215,7 +124,72 @@
 
     // 创建分页查询方法
     function queryRoles(pageno) {
+        var roleLoading = null;
 
+        var ajaxData = {
+            "pageno" : pageno,
+            "pagesize" : 5
+        };
+
+        var roleContent = "";
+
+        $.ajax({
+            type : "post",
+            url : "${pageContext.request.contextPath}/permission/role/queryAll",
+            data : ajaxData,
+            beforeSend : function () {
+                roleLoading = layer.msg("数据加载中", {icon: 16});
+            },
+            success : function (result) {
+                layer.close(roleLoading);
+
+                if (result.succ) {
+
+                    var info = result.data;
+
+                    $.each(info.list,function (i,role) {
+
+                        roleContent += '<tr>';
+                        roleContent += '<td>'+ (i + 1) +'</td>';
+                        roleContent += '<td><input type="checkbox" value="'+ role.id +'"></td>';
+                        roleContent += '<td>'+ role.name +'</td>';
+                        roleContent += '<td>';
+                        roleContent += '    <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>';
+                        roleContent += '    <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>';
+                        roleContent += '    <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>';
+                        roleContent += '</td>';
+                        roleContent += '</tr>';
+
+                    });
+
+                    $.jqPaginator('.pagination', {
+                        // totalPages: 100, //设置分页的总页数
+                        totalCounts: info.total, //设置分页的总条目数
+                        pageSize: info.pageSize,
+                        visiblePages: 5, //设置最多显示的页码数（例如有100也，当前第1页，则显示1 - 7页）
+                        currentPage: info.pageNum,//当前页
+                        first: '<li class="first"><a href="javascript:;">首页</a></li>',
+                        prev: '<li class="prev"><a href="javascript:;"><i class="arrow arrow2"></i>上一页</a></li>',
+                        next: '<li class="next"><a href="javascript:;">下一页<i class="arrow arrow3"></i></a></li>',
+                        last: '<li class="last"><a href="javascript:;">末页</a></li>',
+                        page: '<li class="page"><a href="javascript:;">{{page}}</a></li>',
+                        onPageChange: function (num, type) {
+                            //页面变化回调函数
+                            if (type == "change") {
+                                queryRoles(num);//当前页码
+                            }
+                        }
+                    });
+
+
+                    $("#roleData").html(roleContent);
+                }else {
+                    layer.msg("没有相关数据", {time:2000, icon:2}, function () {
+                        //
+                    });
+                }
+            }
+        })
     }
 </script>
 </body>
